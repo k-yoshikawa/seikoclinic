@@ -1,0 +1,540 @@
+@charset "utf-8";
+/* 共通部分 */
+html,body{
+	padding:0;
+	margin:0;
+}
+#wrapper,#page {
+	width: 100%;
+	height: auto;
+}
+body {
+	width: 100%;
+	position: relative;
+	background-image: url(../img/bg_body.gif);
+	background-repeat: repeat;
+	font-family: "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HiraKakuPro-W3","ＭＳ Ｐゴシック","MS PGothic",Arial, Helvetica,sans-serif;
+	font-size: 14px;
+}
+.clear {
+	clear:both;
+}
+.clearfix {
+  min-height: 1px;
+}
+
+.clearfix:after {
+  content: ".";  /* 新しいコンテンツ */
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; /* 非表示に */
+}
+.center {
+	width: 685px;
+	text-align: center;
+}
+a:link,a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/* basic width */
+#header,
+#content,
+#main{
+	width:960px;
+	margin: 0 auto;
+}
+#content #wrap {
+	background-color: #FFF;
+	width: 685px;
+	border-top: 4px solid rgb(255, 181, 196);
+border-bottom: 1px solid rgb(255, 181, 196);
+background-color: rgb(255, 255, 255);
+margin-top: 15px;
+}
+footer{
+	width:100%;
+}
+.footer_logo{
+	width: 960px;
+	margin: 0 auto;
+}
+	
+
+/* header */
+
+#logo {
+	float: left;
+	width: 500px;
+	margin: 10px 0 0 0;
+}
+.header_info {
+	float: left;
+	width: 430px;
+	margin: 20px 0 0 30px;
+	background-image: url(../img/bg_header_info.png);
+	background-repeat: no-repeat;
+	position: relative;
+}
+.header_info ul,
+.header_info li{
+	list-style:none;
+	padding: 5px 10px;
+	margin: 0;
+}
+.header_info li{
+	padding: 4px 10px;
+	height: 30px;
+}
+.header_info .access{
+	position: absolute;
+	top: 53px;
+	right: 15px;
+}
+#branding {
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 9999;
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* content */
+
+#main {
+	border-top: 4px solid #ffb5c4;
+}
+#content{
+	margin-top: 10px;
+}
+#content_body {
+	background: #fff;
+	padding: 50px 0 30px 0;
+}
+
+/* content_footer */
+
+#content_footer{
+	clear: both;
+	padding-top: 30px;
+}
+#content_footer .footer_gynecology,
+#content_footer .footer_depilatory{
+	float:left;
+}
+#content_footer .footer_gynecology h3,
+#content_footer .footer_depilatory h3{
+	border-left: 6px solid #ffdfdf;
+	margin-left: 10px;
+	padding-left: 10px;
+	color: #777;
+}
+#content_footer .footer_left {
+	width: 670px;
+	float: left;
+	background-image: url(../img/bg_footer_left.png),url(../img/bg_footer_left_bottom.png);
+	background-position: top,bottom;
+	background-repeat: repeat-x;
+	background-color: #fff;
+}
+#content_footer .footer_left ul {
+	list-style-type: none;
+	padding: 0 0 0 30px;
+	margin: 0;
+}
+#content_footer .footer_left li {
+	margin: 5px 0;
+}
+#content_footer .footer_left a {
+	color: #ff6e94;
+}
+#content_footer .footer_left .child li {
+	margin: 0;
+}
+#content_footer .footer_left .child a {
+	color: #777;
+	font-size: 12px;
+}
+#content_footer .footer_left .child {
+	padding-left: 10px;
+}
+#content_footer .footer_right {
+	width:270px;
+	height:230px;
+	margin-left:20px;
+	float: left;
+	background-image: url(../img/bg_footer_right.png);
+	background-repeat: no-repeat;
+}
+#content_footer .footer_right ul{
+	list-style:none;
+	padding: 0;
+	margin: 120px auto 0;
+	text-align: center;
+}
+
+.footer_list_left {
+	float: left;
+}
+.footer_list_center {
+	float: left;
+}
+.footer_list_right {
+	float: left;
+}
+
+
+/* トップへ戻るボタン */
+.btn_pageTop{
+	text-align: right;
+	margin-right:5px;
+}
+
+/* メインコンテンツ、サイドバー設定 */
+#primary{
+	width: 685px;
+	float: right;
+}
+#secondary{
+	float: left;
+	width: 260px;
+	margin: 0;
+}
+.archive #content,
+.singular #content,
+.left-sidebar.singular #content {
+position: relative;
+width: auto;
+}
+
+#secondary .widget-title,
+#secondary #contentmenu #sidebartop {
+	color: #fefefe;
+	background: url(../img/gynecology/bg_sidebar_h1.jpg) no-repeat;
+	padding: 8px 0 8px 26px;
+	font-weight: bold;
+	border-radius: 3px 3px 0 0;
+	margin: 10px 0 1px 0;
+}
+#secondary .widget li,
+#secondary #contentmenu li {
+	background: url(../img/gynecology/bg_sidebar_li.jpg) no-repeat;
+	padding: 9px 0 9px 60px;
+}
+
+/* トップページのメインコンテンツ、サイドバー設定 */
+.home #primary{
+	width: 660px;
+	float: left;
+	margin: 0 15px 0 0;
+}
+.home #secondary{
+	margin: 0;
+	width: 285px;
+	float: right;
+}
+
+
+/* toppage */
+ul.top_entrance {
+	margin-left: 35px;
+	padding: 0;
+}
+.top_entrance,
+.top_entrance li{
+	list-style:none;
+	list-style-type:none;
+	display:inline;
+}
+
+/*　婦人科・皮膚科のトップページ　*/
+.home .zone {
+	margin-top: 20px;
+}
+.zone {
+	border-top: 4px solid #ffb5c4;
+	border-bottom: 1px solid #ffb5c4;
+	background-color: #fff;
+	margin-top: 0;
+}
+
+.zone h1,
+.zone h3{
+	background-image: url(../img/bdr_footer_left.png);
+	background-position: bottom;
+	background-repeat: repeat-x;
+	color: #545454;
+	font-size: 16px;
+	font-weight: normal;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 0 1em 0;
+	padding-left: 0.8em;
+	white-space: nowrap;
+}
+
+
+#primary .zone_content{
+	padding: 15px 30px;
+}
+
+#secondary .zone_content{
+	padding: 15px 0;
+	text-align: center;
+}
+
+.consultation table th{
+	background-color: #ffdfdf;
+	color: #545454;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 0.5em 1em;
+	border: 1px solid #fff;
+}
+.consultation .first_line th{
+	padding: 1em;
+}
+.consultation table td{
+	background-color: #fff;
+	font-size: 25px;
+	text-align: center;
+	border: 1px solid #ffdfdf;
+}
+.consultation .attention,
+.access .attention{
+	color: #666;
+	font-size: 12px;
+}
+
+/*　婦人科の診察・検査　*/
+/*　ページ共通部分　*/
+.bold_black{
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+}
+.black {
+	margin-left: 15px;
+	font-size: 14px;
+	color: #333;
+}
+
+.red {
+	font-size: 14px;
+	color: #BF3F65;
+	margin-left: 15px;
+}
+.centertext  {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 12px;
+	color: #666;
+}
+.smalldot {
+	clear: both;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.centertext_nofloat {
+	font-size: 12px;
+	color: #666;
+	width: 685px;
+	margin-left: 15px;
+}
+
+.maintext {
+	font-size: 12px;
+	color: #666;
+	width: 388px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+.photoleft {
+	float: left;
+	width: 251px;
+	margin-left: 15px;
+}
+.dotbig {
+	background-image: url("../img/bdr_footer_left.png");
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	clear: both;
+	margin-left: -15px;
+}
+.main_zone_content {
+	width: 685px;
+	overflow: hidden;
+	margin-bottom: 85px;
+}
+
+
+.tablespace {
+	width: 650px;
+	margin-bottom: 15px;
+}
+.tablecenter  {
+	text-align: center;
+	width: 325px;
+}
+
+/* 性病検査 */
+tr .vd_btn {
+	width: 216px;
+	text-align: center;
+}
+.vd_symptoms {
+	font-size: 14px;
+	color: #BF3F65;
+	margin-left: 15px;
+	width: 50px;
+	float: left;
+}
+.vd_symptoms_list {
+	float: left;
+	width: 400px;
+	list-style-image: url(../img/gynecology/examination/vd/i_checkmark.png);
+	font-weight: 150;
+	font-size: 14px;
+	color: #333;
+}
+.vd_symptoms_list li {
+}
+.vd_symptoms_description {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+}
+#vd_symptoms_syphilis {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	list-style-type: none;
+	width: 60px;
+	margin-left: 0px;
+}
+#vd_symptoms_syphilis ul {
+	list-style-type: none;
+	width: 70px;
+	float: none;
+}
+
+/*↓緊急避妊ピル↓*/
+.emergency_maintext {
+	font-size: 12px;
+	color: #666;
+	float: right;
+	width: 300px;
+	margin-right: 15px;
+	padding-top: 5px;
+}
+
+/*↓各ページQ&A↓*/
+.answer {
+	font-size: 14px;
+	color: #333;
+}
+
+/*↓医師・診療方針・English↓*/
+.doctor_address_text {
+	float: left;
+	width: 250px;
+	margin-top: 200px;
+	margin-left: 20px;
+}
+#doctor_english_map {
+	width: 300px;
+	float: right;
+	margin-right: 15px;
+}
+
+/*↓アクセス↓*/
+
+.access_map {
+	float: right;
+	margin-right: 20px;
+	text-align: right;
+	width: 356px;
+	font-size: 12px;
+	color: #666;
+}
+
+/* 投稿 */
+.singular .entry-header .entry-meta {
+padding: 0 15px;
+}
+
+/* 新着情報 */
+/* 新着情報 */
+.news_zone .zone_content{
+	overflow-y: scroll;
+}
+.zone_content .newsfeed_day{
+	height: auto;
+	width: 600px;
+	float: none;
+	box-shadow: none;
+	border-radius: 0;
+	background-color: #fff;
+}
+
+.newsfeed_dt{
+	display: inline;
+	margin: 0;
+}
+
+.newsfeed_dd{
+	display: inline;
+	font-size: 1em;
+	float: none;
+}
+
+.newsfeed_dt a,
+.newsfeed_dd a{
+	border-bottom: 1px dashed #ffdfdf;
+}
+.newsfeed_dt a:hover,
+.newsfeed_dd a:hover{
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+/* footer */
+footer {
+	margin-top: 60px;
+	background-color: #fff;
+}
+.footer_logo{
+	text-align: center;
+	position: relative;
+	height: 120px;
+}
+.footer_logo img{
+	position: absolute;
+	left: 70px;
+}
+.footer_logo span{
+	color: #ff6c92;
+	font-size: 12px;
+	position: absolute;
+	right: 200px;
+	top: 45px;
+}
+.copyright{
+	background-color: #ffb5c4;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+	padding: .5em;
+}
